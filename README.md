@@ -10,7 +10,19 @@ $ pip install py_summarize_it
 
 ## Usage
 
-- TODO
+`py_summarize_it` can be used to count words in a text file and plot results
+as follows:
+
+```python
+from py_summarize_it.py_summarize_it import count_words
+from py_summarize_it.plotting import plot_words
+import matplotlib.pyplot as plt
+
+file_path = "test.txt"  # path to your file
+counts = count_words(file_path)
+fig = plot_words(counts, n=10)
+plt.show()
+```
 
 ## Contributing
 
